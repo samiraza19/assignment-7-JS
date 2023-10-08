@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h3 onclick="popup()">Click Me:</h3>  <!-- Q 1  -->
+<br>
+  
+<h3 onclick="salam()">Hello World</h3> <!-- Q 2  -->
+<br>
+
+<a onclick="link()" href="#">chek link</a>  <!-- Q 3  -->
+<br>
+<br>
+<a href="#">Go to down</a> <!-- Q 4 -->
+<br>
+<br>
+<a href=""><audio src="On the Delta - John Patitucci.mp3"></audio>Click for music </a> <!-- Q 5  -->
+<br>
+<br>
+<a target="_blank" href="file:///C:/Users/Sharjeel/Desktop/learning%20html/assignment%2007%20JS/index.html">Click for a new window </a> <!-- Q 6  -->
+<br>
+<br>
+<button onclick="popup()">Click Me:</button>  <!-- Q 7  -->
+<br>
+<br>
+<button onfocus="this.style.backgroundColor='green'">Click Me:</button>  <!-- Q 8  -->
+<br>
+<br>
+<button><audio src="On the Delta - John Patitucci.mp3"></audio>Click for music </button> <!-- Q 9  -->
+<br>
+<br>
+<h3 onmouseover="popup()">Click Me:</h3>  <!-- Q 10  -->
+<br>
+<h3 onmouseover="salam()">Hello World</h3> <!-- Q 11  -->
+<br>
+<br>
+<input id="userinput" type="text" />
+<br>
+<br>
+    <button onclick="get()">get</button> <!-- Q 12 -->
+<br>
+<br>
+<input id="user1" type="checkbox">Did you like it
+<!-- <input id="user2" type="checkbox">Did you don't like it -->
+<!-- <input id="user3" type="checkbox">May be  -->
+<br><br>
+<button onclick="chek()">get</button> <!-- Q 13 -->
+<br>
+<br>
+
+<input id="usersami" name="gender" type="radio">Male
+<input id="user2" name="gender" type="radio">female
+<input id="user3" name="gender" type="radio">Custom
+<br><br>
+<button onclick="sami()">get</button> <!-- Q 14 -->
+<br>
+<br>
+<input type="text" name="" id="userText">
+<br>
+<br>
+<input type="text" name="" id="userLine">
+<br><br>
+<button onclick="lelo()">get</button>
+<br>
+<br> 
+<!-- Rejistration Form -->
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form id="registrationForm" onsubmit="validateForm(event)">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required><br>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required><br>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br>
+
+            <label for="qualification">Qualification:</label>
+            <select id="qualification">
+                <option value="Under Matric">Under Matric</option>
+                <option value="High School">High School</option>
+                <option value="Bachelor's Degree">Bachelor's Degree</option>
+                <option value="Master's Degree">Master's Degree</option>
+            </select><br>
+
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female" required>
+            <label for="female">Female</label><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required><br>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" required><br>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+
+
+
+
+
+
+<script src="app.js"></script>    
+</body>
+</html>
